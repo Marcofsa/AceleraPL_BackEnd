@@ -102,9 +102,9 @@ namespace Livraria_AceleraPL
                 if (decimal.TryParse(Console.ReadLine(), out decimal valor))
                 {
                     Console.Write("Nº Paginas: ");
-                    if (int.TryParse(Console.ReadLine(), out int pg))
+                    if (int.TryParse(Console.ReadLine(), out int numPaginas))
                     {
-                        Livros novo = new Livros(livro, pg, cod, valor);
+                        Livros novo = new Livros(livro, numPaginas, cod, valor);
                         biblioteca.Add(novo);
                     }
                     else
@@ -144,9 +144,7 @@ namespace Livraria_AceleraPL
                     Console.Write("Qual livro você deseja?, digite o nome: ");
                     string nomeLivro = Console.ReadLine();
 
-                    List<Livros> buscalivro = biblioteca
-                        .Where(x => x.Livro.StartsWith(nomeLivro))
-                        .ToList();
+                    List<Livros> buscalivro = biblioteca.Where(x => x.Livro.StartsWith(nomeLivro)).ToList();
                     if (buscalivro.Count == 0)
                     {
                         Console.WriteLine("Livro não encontrado");
@@ -227,7 +225,7 @@ namespace Livraria_AceleraPL
                 Console.WriteLine($"Nome: {liv.Livro}");
                 Console.WriteLine($"Código: {liv.Codigo}");
                 Console.WriteLine($"Valor: {liv.Valor:C}");
-                Console.WriteLine();
+                Console.WriteLine("");
                 i++;
             }
         }
