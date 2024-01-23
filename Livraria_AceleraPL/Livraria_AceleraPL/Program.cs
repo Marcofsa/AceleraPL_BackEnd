@@ -227,7 +227,6 @@ namespace Livraria_AceleraPL
                 Console.WriteLine($"Nome: {liv.Livro}");
                 Console.WriteLine($"Código: {liv.Codigo}");
                 Console.WriteLine($"Valor: {liv.Valor:C}");
-                Console.WriteLine(value: $"Nº Páginas: {liv.NumeroPaginas}");
                 Console.WriteLine();
                 i++;
             }
