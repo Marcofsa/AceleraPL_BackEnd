@@ -25,23 +25,30 @@ namespace Livraria_AceleraPL
                         CadastrarLivro(biblioteca);
                         break;
                     case 2:
-                        Console.WriteLine("Cadastro de Usuario");
+                        Console.WriteLine("Cadastro de Usuário");
                         CadastrarUsuario(usuarios);
                         break;
                     case 3:
-                        Console.WriteLine("Consultar Livros");
+                        Console.WriteLine("Novo Empréstimo");
                         NovoEmprestimo(biblioteca, usuarios, emprestimos);
                         break;
                     case 4:
                         Console.WriteLine("Devolver Empréstimo");
+                        DevolverEmprestimo(emprestimos);
                         break;
                     case 5:
                         Console.WriteLine("Consultar Livros");
                         ConsultarLivros(biblioteca);
                         break;
+                    case 6:
+                        Console.WriteLine("Consultar Usuário");
+                        ConsultarUsuario(usuarios);
+                        break;
                 }
+
             } while (opcao != 7);
 
+            Console.WriteLine("Programa encerrado.");
             Console.ReadLine();
         }
 
@@ -85,7 +92,6 @@ namespace Livraria_AceleraPL
 
             if (double.TryParse(Console.ReadLine(), out double cod))
             {
-                // Verifique se o código é único antes de adicionar
                 if (biblioteca.Any(l => l.Codigo == cod))
                 {
                     Console.WriteLine("Código já cadastrado. Tente novamente com um código único.");
@@ -117,11 +123,7 @@ namespace Livraria_AceleraPL
             }
         }
 
-        static void NovoEmprestimo(
-            List<Livros> biblioteca,
-            List<Usuario> usuarios,
-            List<Emprestimo> emprestimos
-        )
+        static void NovoEmprestimo(List<Livros> biblioteca, List<Usuario> usuarios, List<Emprestimo> emprestimos)
         {
             Console.Write("Login: ");
             string login = Console.ReadLine();
@@ -153,21 +155,18 @@ namespace Livraria_AceleraPL
                     {
                         Console.WriteLine($"{buscalivro[0].Livro} encontrado!");
 
-                        // ADICIONA "REGISTRO" NA LISTA EMPRESTIMOS (OPICIONAL)
                         Emprestimo novoEmprestimo = new Emprestimo(buscalivro[0], buscado);
                         emprestimos.Add(novoEmprestimo);
+                        Console.WriteLine("Empréstimo registrado com sucesso!");
                     }
                     else
                     {
                         Console.WriteLine($"{buscalivro.Count} encontrados");
 
-                        // INFORMAR QUAIS LIVROS ENCONTRADOS COM O NOME
                         Console.WriteLine("Livros encontrados:");
                         foreach (var livroEncontrado in buscalivro)
                         {
-                            Console.WriteLine(
-                                $"{livroEncontrado.Livro} - Código: {livroEncontrado.Codigo}"
-                            );
+                            Console.WriteLine($"{livroEncontrado.Livro} - Código: {livroEncontrado.Codigo}");
                         }
 
                         Console.Write("Digite o código do livro desejado: ");
@@ -180,6 +179,7 @@ namespace Livraria_AceleraPL
                             {
                                 Emprestimo novoEmprestimo = new Emprestimo(livroEscolhido, buscado);
                                 emprestimos.Add(novoEmprestimo);
+                                Console.WriteLine("Empréstimo registrado com sucesso!");
                             }
                             else
                             {
@@ -231,5 +231,47 @@ namespace Livraria_AceleraPL
                 i++;
             }
         }
+
+        static void ConsultarUsuario(List<Usuario> usuarios)
+        {
+            Console.Write("Digite o login do usuário: ");
+            string login = Console.ReadLine();
+
+            Usuario usuarioEncontrado = usuarios.FirstOrDefault(u => u.Login.Equals(login));
+
+            if (usuarioEncontrado != null)
+            {
+                Console.WriteLine($"Usuário encontrado:");
+                Console.WriteLine($"Nome: {usuarioEncontrado.Nome}");
+                Console.WriteLine($"Login: {usuarioEncontrado.Login}");
+                Console.WriteLine($"ID: {usuarioEncontrado.Id}");
+            }
+            else
+            {
+                Console.WriteLine("Usuário não encontrado.");
+            }
+        }
+
+        static void DevolverEmprestimo(List<Emprestimo> emprestimos)
+        {
+            Console.Write("Digite o índice do empréstimo a ser devolvido: ");
+            if (int.TryParse(Console.ReadLine(), out int indiceEmprestimo))
+            {
+                if (indiceEmprestimo >= 0 && indiceEmprestimo < emprestimos.Count)
+                {
+                    emprestimos.RemoveAt(indiceEmprestimo);
+                    Console.WriteLine("Empréstimo devolvido com sucesso!");
+                }
+                else
+                {
+                    Console.WriteLine("Índice de empréstimo inválido. Tente novamente.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Índice inválido. Tente novamente.");
+            }
+        }
+
     }
 }

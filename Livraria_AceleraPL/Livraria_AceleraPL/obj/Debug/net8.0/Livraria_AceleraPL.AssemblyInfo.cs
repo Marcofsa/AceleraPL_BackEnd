@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Livraria_AceleraPL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d535929cb88e6691a515df4092bf73070bed080")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d565d6faf5f66000502e5a534ccfd61f56fdaa1e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Livraria_AceleraPL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Livraria_AceleraPL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
