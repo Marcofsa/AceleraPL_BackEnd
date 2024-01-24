@@ -1,0 +1,24 @@
+﻿@model HomeModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="card text-center">
+  <div class="card-header">
+    Minhas informações de Contatos
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">@Model.Nome</h5>
+    <form  name="nomeFORM">
+        <input type="text" name="nome2" class="nome3" id="teste"/>  
+    </form>
+    <p class="card-text info" >Morador da cidade de @Model.Cidade</p>
+    <p class="card-text">Meu telefone: @Model.Fone | E-mail: @Model.Email</p>
+    <a href="#" class="btn btn-primary" onclick="calcularAnoNascimento(@Model.Idade)" >Qual ano de nascimento?</a>
+  </div>
+  <div class="card-footer text-body-secondary">
+    Idade: @Model.Idade
+  </div>
+</div>

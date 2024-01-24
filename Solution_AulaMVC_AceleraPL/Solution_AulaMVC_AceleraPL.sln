@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AulaMVC_AceleraPL", "AulaMVC_AceleraPL\AulaMVC_AceleraPL.csproj", "{94E8EA92-E467-451C-82E4-6C21802F369E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94E8EA92-E467-451C-82E4-6C21802F369E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94E8EA92-E467-451C-82E4-6C21802F369E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94E8EA92-E467-451C-82E4-6C21802F369E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94E8EA92-E467-451C-82E4-6C21802F369E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74C1B00C-1DCA-4620-9A42-F45CF8B2D7A9}
+	EndGlobalSection
+EndGlobal
