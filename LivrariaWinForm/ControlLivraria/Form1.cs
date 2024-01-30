@@ -1,3 +1,4 @@
+
 using Livraria;
 
 namespace ControlLivraria
@@ -19,12 +20,15 @@ namespace ControlLivraria
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-            //IMPLEMENTAR SE CAMPOS VAZIOS
-            //if(txbNome.Text != String.Empty && txbLogin.Text != String.Empty &&.......) { }
-            LUsuarios.AdicionaUsuarios(new Usuario(txbNome.Text, txbLogin.Text, txbSenha.Text));
-
-            atualizaDGVUsuarios();
-
+            if (string.IsNullOrEmpty(txbNome.Text) || string.IsNullOrEmpty(txbLogin.Text) || string.IsNullOrEmpty(txbSenha.Text))
+            {
+                MessageBox.Show("Por favor, preencha todos os campos.");
+            }
+            else
+            {
+                LUsuarios.AdicionaUsuarios(new Usuario(txbNome.Text, txbLogin.Text, txbSenha.Text));
+                atualizaDGVUsuarios();
+            }
         }
 
         private void atualizaDGVUsuarios()

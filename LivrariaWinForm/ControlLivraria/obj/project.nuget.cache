@@ -1,18 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "T77/pQI8Ocbk7IPOLgkb3ErwCr80J+8W/jHW0H6j7J0jTfjDKR3xVkbByslHMcPQaprzNuoivjsOG0ExXW28Wg==",
-  "success": false,
+  "dgSpecHash": "KQJfL3bLo8qQQPMfOAaqLYdA+yUMB5ifeMDxs6KwpXwjb5u2fgJBre0F8BD03wP2QYBabkaB4Tqep59EFSe8LA==",
+  "success": true,
   "projectFilePath": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\LivrariaWinForm\\ControlLivraria\\ControlLivraria.csproj",
-  "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\LivrariaWinForm\\Livraria\\Livraria.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\LivrariaWinForm\\Livraria\\Livraria.csproj",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    }
-  ]
+  "expectedPackageFiles": [
+    "C:\\Users\\garen\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
 }

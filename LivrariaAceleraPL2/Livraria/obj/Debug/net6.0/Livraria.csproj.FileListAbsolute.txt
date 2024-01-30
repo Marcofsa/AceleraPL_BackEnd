@@ -23,3 +23,16 @@ E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaWinForm\Livraria\Livraria\obj\De
 E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaWinForm\Livraria\Livraria\obj\Debug\net6.0\refint\Livraria.dll
 E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaWinForm\Livraria\Livraria\obj\Debug\net6.0\Livraria.pdb
 E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaWinForm\Livraria\Livraria\obj\Debug\net6.0\ref\Livraria.dll
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaAceleraPL2\Livraria\bin\Debug\net6.0\Livraria.deps.json
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaAceleraPL2\Livraria\bin\Debug\net6.0\Livraria.dll
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaAceleraPL2\Livraria\bin\Debug\net6.0\Livraria.pdb
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaAceleraPL2\Livraria\obj\Debug\net6.0\Livraria.csproj.AssemblyReference.cache
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaAceleraPL2\Livraria\obj\Debug\net6.0\Livraria.GeneratedMSBuildEditorConfig.editorconfig
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaAceleraPL2\Livraria\obj\Debug\net6.0\Livraria.AssemblyInfoInputs.cache
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaAceleraPL2\Livraria\obj\Debug\net6.0\Livraria.AssemblyInfo.cs
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaAceleraPL2\Livraria\obj\Debug\net6.0\Livraria.csproj.CoreCompileInputs.cache
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaAceleraPL2\Livraria\obj\Debug\net6.0\Livraria.sourcelink.json
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaAceleraPL2\Livraria\obj\Debug\net6.0\Livraria.dll
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaAceleraPL2\Livraria\obj\Debug\net6.0\refint\Livraria.dll
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaAceleraPL2\Livraria\obj\Debug\net6.0\Livraria.pdb
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaAceleraPL2\Livraria\obj\Debug\net6.0\ref\Livraria.dll
