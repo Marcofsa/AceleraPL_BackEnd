@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "T77/pQI8Ocbk7IPOLgkb3ErwCr80J+8W/jHW0H6j7J0jTfjDKR3xVkbByslHMcPQaprzNuoivjsOG0ExXW28Wg==",
+  "success": false,
+  "projectFilePath": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\LivrariaWinForm\\ControlLivraria\\ControlLivraria.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\LivrariaWinForm\\Livraria\\Livraria.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\LivrariaWinForm\\Livraria\\Livraria.csproj",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
+}
