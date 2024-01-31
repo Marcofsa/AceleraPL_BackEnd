@@ -1,12 +1,12 @@
-
 using Livraria;
+using System.Collections.Generic;
 
 namespace ControlLivraria
 {
     public partial class Form1 : Form
     {
         ListaDeUsuarios LUsuarios;
-
+        ListaDeLivros ListaLivros;
 
         public Form1()
         {
@@ -31,6 +31,22 @@ namespace ControlLivraria
             }
         }
 
+        private void btn_addLivro_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtBoxLivro.Text) || string.IsNullOrEmpty(txtBoxCod.Text) || string.IsNullOrEmpty(txtBoxValor.Text))
+            {
+                MessageBox.Show("Por favor, preencha todos os campos.");
+            }
+            else
+            {
+                int valor = int.Parse(txtBoxValor.Text);
+                int paginas = int.Parse(txtBoxPaginas.Text);
+                int codigo = int.Parse(txtBoxCod.Text);
+                ListaLivros.CadastraLivro(new Livros(txtBoxLivro.Text, codigo, valor, paginas));
+                atualizaDGVLivros();
+            }
+        }
+        
         private void atualizaDGVUsuarios()
         {
             BindingSource bs = new BindingSource();
@@ -38,9 +54,17 @@ namespace ControlLivraria
             dgvUsuarios.DataSource = bs;
         }
 
+        private void atualizaDGVLivros()
+        {
+            BindingSource bs = new BindingSource();
+            bs.DataSource = ListaLivros.GetLivros();
+            dgvLivros.DataSource = bs;
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             LUsuarios = new ListaDeUsuarios();
+            ListaLivros = new ListaDeLivros();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -79,5 +103,31 @@ namespace ControlLivraria
 
             atualizaDGVUsuarios();
         }
+
+        #region :: Excluir ::
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void dgvLivros_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+        #endregion
     }
 }

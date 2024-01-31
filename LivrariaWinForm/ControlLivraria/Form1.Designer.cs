@@ -49,48 +49,52 @@
             txbNome = new TextBox();
             label1 = new Label();
             tabPage2 = new TabPage();
+            groupBox6 = new GroupBox();
+            txtBoxValor = new TextBox();
+            label9 = new Label();
+            button8 = new Button();
+            button9 = new Button();
+            button10 = new Button();
+            btn_addLivro = new Button();
+            txtBoxPaginas = new TextBox();
+            label5 = new Label();
+            txtBoxCod = new TextBox();
+            label7 = new Label();
+            txtBoxLivro = new TextBox();
+            label8 = new Label();
+            groupBox5 = new GroupBox();
+            dgvLivros = new DataGridView();
             tabPage3 = new TabPage();
-            saveFileDialog1 = new SaveFileDialog();
-            openFileDialog1 = new OpenFileDialog();
+            groupBox4 = new GroupBox();
+            dataGridView1 = new DataGridView();
             groupBox3 = new GroupBox();
+            comboBox2 = new ComboBox();
+            label4 = new Label();
+            comboBox1 = new ComboBox();
             button4 = new Button();
             button5 = new Button();
             button6 = new Button();
             button7 = new Button();
             label6 = new Label();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            label4 = new Label();
-            groupBox4 = new GroupBox();
-            dataGridView1 = new DataGridView();
-            groupBox5 = new GroupBox();
-            dataGridView2 = new DataGridView();
-            groupBox6 = new GroupBox();
-            button8 = new Button();
-            button9 = new Button();
-            button10 = new Button();
-            button11 = new Button();
-            textBox1 = new TextBox();
-            label5 = new Label();
-            textBox2 = new TextBox();
-            label7 = new Label();
-            textBox3 = new TextBox();
-            label8 = new Label();
-            textBox4 = new TextBox();
-            label9 = new Label();
+            saveFileDialog1 = new SaveFileDialog();
+            openFileDialog1 = new OpenFileDialog();
+            IdCol = new DataGridViewTextBoxColumn();
+            LivroCol = new DataGridViewTextBoxColumn();
+            NumPagCol = new DataGridViewTextBoxColumn();
+            ValorCol = new DataGridViewTextBoxColumn();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvUsuarios).BeginInit();
             groupBox1.SuspendLayout();
             tabPage2.SuspendLayout();
+            groupBox6.SuspendLayout();
+            groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvLivros).BeginInit();
             tabPage3.SuspendLayout();
-            groupBox3.SuspendLayout();
             groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
-            groupBox6.SuspendLayout();
+            groupBox3.SuspendLayout();
             SuspendLayout();
             // 
             // tabControl1
@@ -303,6 +307,170 @@
             tabPage2.Text = "Livros";
             tabPage2.UseVisualStyleBackColor = true;
             // 
+            // groupBox6
+            // 
+            groupBox6.Controls.Add(txtBoxValor);
+            groupBox6.Controls.Add(label9);
+            groupBox6.Controls.Add(button8);
+            groupBox6.Controls.Add(button9);
+            groupBox6.Controls.Add(button10);
+            groupBox6.Controls.Add(btn_addLivro);
+            groupBox6.Controls.Add(txtBoxPaginas);
+            groupBox6.Controls.Add(label5);
+            groupBox6.Controls.Add(txtBoxCod);
+            groupBox6.Controls.Add(label7);
+            groupBox6.Controls.Add(txtBoxLivro);
+            groupBox6.Controls.Add(label8);
+            groupBox6.Location = new Point(9, 9);
+            groupBox6.Name = "groupBox6";
+            groupBox6.Size = new Size(640, 85);
+            groupBox6.TabIndex = 3;
+            groupBox6.TabStop = false;
+            // 
+            // txtBoxValor
+            // 
+            txtBoxValor.Location = new Point(233, 48);
+            txtBoxValor.Name = "txtBoxValor";
+            txtBoxValor.PasswordChar = '*';
+            txtBoxValor.Size = new Size(62, 23);
+            txtBoxValor.TabIndex = 11;
+            txtBoxValor.TextChanged += textBox4_TextChanged;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(194, 51);
+            label9.Name = "label9";
+            label9.Size = new Size(33, 15);
+            label9.TabIndex = 10;
+            label9.Text = "Valor";
+            // 
+            // button8
+            // 
+            button8.AutoSize = true;
+            button8.Image = Properties.Resources.import_csv_32px;
+            button8.Location = new Point(549, 19);
+            button8.Name = "button8";
+            button8.Size = new Size(75, 57);
+            button8.TabIndex = 9;
+            button8.Text = "Imp. CSV";
+            button8.TextImageRelation = TextImageRelation.ImageAboveText;
+            button8.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            button9.AutoSize = true;
+            button9.Image = Properties.Resources.json_download_32px;
+            button9.Location = new Point(468, 19);
+            button9.Name = "button9";
+            button9.Size = new Size(75, 57);
+            button9.TabIndex = 8;
+            button9.Text = "Exp. JSON";
+            button9.TextImageRelation = TextImageRelation.ImageAboveText;
+            button9.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            button10.AutoSize = true;
+            button10.Image = Properties.Resources.export_csv_32px;
+            button10.Location = new Point(387, 19);
+            button10.Name = "button10";
+            button10.Size = new Size(75, 57);
+            button10.TabIndex = 7;
+            button10.Text = "Exp. CSV";
+            button10.TextImageRelation = TextImageRelation.ImageAboveText;
+            button10.UseVisualStyleBackColor = true;
+            // 
+            // btn_addLivro
+            // 
+            btn_addLivro.AutoSize = true;
+            btn_addLivro.Image = Properties.Resources.book_32px;
+            btn_addLivro.Location = new Point(306, 19);
+            btn_addLivro.Name = "btn_addLivro";
+            btn_addLivro.Size = new Size(75, 57);
+            btn_addLivro.TabIndex = 6;
+            btn_addLivro.Text = "Adicionar";
+            btn_addLivro.TextImageRelation = TextImageRelation.ImageAboveText;
+            btn_addLivro.UseVisualStyleBackColor = true;
+            btn_addLivro.Click += btn_addLivro_Click;
+            // 
+            // txtBoxPaginas
+            // 
+            txtBoxPaginas.Location = new Point(149, 48);
+            txtBoxPaginas.Name = "txtBoxPaginas";
+            txtBoxPaginas.PasswordChar = '*';
+            txtBoxPaginas.Size = new Size(39, 23);
+            txtBoxPaginas.TabIndex = 5;
+            txtBoxPaginas.TextChanged += textBox1_TextChanged;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(117, 51);
+            label5.Name = "label5";
+            label5.Size = new Size(26, 15);
+            label5.TabIndex = 4;
+            label5.Text = "Pgs";
+            // 
+            // txtBoxCod
+            // 
+            txtBoxCod.Location = new Point(49, 48);
+            txtBoxCod.Name = "txtBoxCod";
+            txtBoxCod.Size = new Size(62, 23);
+            txtBoxCod.TabIndex = 3;
+            txtBoxCod.TextChanged += textBox2_TextChanged;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(5, 51);
+            label7.Name = "label7";
+            label7.Size = new Size(29, 15);
+            label7.TabIndex = 2;
+            label7.Text = "Cód";
+            // 
+            // txtBoxLivro
+            // 
+            txtBoxLivro.Location = new Point(49, 19);
+            txtBoxLivro.Name = "txtBoxLivro";
+            txtBoxLivro.Size = new Size(246, 23);
+            txtBoxLivro.TabIndex = 1;
+            txtBoxLivro.TextChanged += textBox3_TextChanged;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(5, 22);
+            label8.Name = "label8";
+            label8.Size = new Size(33, 15);
+            label8.TabIndex = 0;
+            label8.Text = "Livro";
+            // 
+            // groupBox5
+            // 
+            groupBox5.Controls.Add(dgvLivros);
+            groupBox5.Location = new Point(6, 100);
+            groupBox5.Name = "groupBox5";
+            groupBox5.Size = new Size(640, 295);
+            groupBox5.TabIndex = 2;
+            groupBox5.TabStop = false;
+            // 
+            // dgvLivros
+            // 
+            dgvLivros.AllowUserToAddRows = false;
+            dgvLivros.AllowUserToDeleteRows = false;
+            dgvLivros.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvLivros.Columns.AddRange(new DataGridViewColumn[] { IdCol, LivroCol, NumPagCol, ValorCol });
+            dgvLivros.Location = new Point(6, 17);
+            dgvLivros.Name = "dgvLivros";
+            dgvLivros.ReadOnly = true;
+            dgvLivros.RowHeadersVisible = false;
+            dgvLivros.RowTemplate.Height = 25;
+            dgvLivros.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvLivros.Size = new Size(628, 272);
+            dgvLivros.TabIndex = 0;
+            dgvLivros.CellContentClick += dgvLivros_CellContentClick;
+            // 
             // tabPage3
             // 
             tabPage3.Controls.Add(groupBox4);
@@ -315,9 +483,28 @@
             tabPage3.Text = "Empréstimos";
             tabPage3.UseVisualStyleBackColor = true;
             // 
-            // openFileDialog1
+            // groupBox4
             // 
-            openFileDialog1.FileName = "openFileDialog1";
+            groupBox4.Controls.Add(dataGridView1);
+            groupBox4.Location = new Point(3, 97);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new Size(640, 295);
+            groupBox4.TabIndex = 2;
+            groupBox4.TabStop = false;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(6, 17);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersVisible = false;
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.Size = new Size(628, 272);
+            dataGridView1.TabIndex = 0;
             // 
             // groupBox3
             // 
@@ -334,6 +521,31 @@
             groupBox3.Size = new Size(640, 85);
             groupBox3.TabIndex = 1;
             groupBox3.TabStop = false;
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(63, 48);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(232, 23);
+            comboBox2.TabIndex = 12;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(5, 51);
+            label4.Name = "label4";
+            label4.Size = new Size(38, 15);
+            label4.TabIndex = 11;
+            label4.Text = "Livros";
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(63, 19);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(232, 23);
+            comboBox1.TabIndex = 10;
             // 
             // button4
             // 
@@ -392,210 +604,43 @@
             label6.TabIndex = 0;
             label6.Text = "Usuarios";
             // 
-            // comboBox1
+            // openFileDialog1
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(63, 19);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(232, 23);
-            comboBox1.TabIndex = 10;
+            openFileDialog1.FileName = "openFileDialog1";
             // 
-            // comboBox2
+            // IdCol
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(63, 48);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(232, 23);
-            comboBox2.TabIndex = 12;
+            IdCol.DataPropertyName = "Paginas";
+            IdCol.HeaderText = "ID";
+            IdCol.MinimumWidth = 58;
+            IdCol.Name = "IdCol";
+            IdCol.ReadOnly = true;
+            IdCol.Width = 58;
             // 
-            // label4
+            // LivroCol
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(5, 51);
-            label4.Name = "label4";
-            label4.Size = new Size(38, 15);
-            label4.TabIndex = 11;
-            label4.Text = "Livros";
+            LivroCol.DataPropertyName = "Livro";
+            LivroCol.HeaderText = "Livro";
+            LivroCol.Name = "LivroCol";
+            LivroCol.ReadOnly = true;
+            LivroCol.Width = 350;
             // 
-            // groupBox4
+            // NumPagCol
             // 
-            groupBox4.Controls.Add(dataGridView1);
-            groupBox4.Location = new Point(3, 97);
-            groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(640, 295);
-            groupBox4.TabIndex = 2;
-            groupBox4.TabStop = false;
+            NumPagCol.DataPropertyName = "Valor";
+            NumPagCol.HeaderText = "Num. Páginas";
+            NumPagCol.Name = "NumPagCol";
+            NumPagCol.ReadOnly = true;
+            NumPagCol.Width = 150;
             // 
-            // dataGridView1
+            // ValorCol
             // 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(6, 17);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.RowHeadersVisible = false;
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.Size = new Size(628, 272);
-            dataGridView1.TabIndex = 0;
-            // 
-            // groupBox5
-            // 
-            groupBox5.Controls.Add(dataGridView2);
-            groupBox5.Location = new Point(6, 100);
-            groupBox5.Name = "groupBox5";
-            groupBox5.Size = new Size(640, 295);
-            groupBox5.TabIndex = 2;
-            groupBox5.TabStop = false;
-            // 
-            // dataGridView2
-            // 
-            dataGridView2.AllowUserToAddRows = false;
-            dataGridView2.AllowUserToDeleteRows = false;
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(6, 17);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.ReadOnly = true;
-            dataGridView2.RowHeadersVisible = false;
-            dataGridView2.RowTemplate.Height = 25;
-            dataGridView2.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView2.Size = new Size(628, 272);
-            dataGridView2.TabIndex = 0;
-            // 
-            // groupBox6
-            // 
-            groupBox6.Controls.Add(textBox4);
-            groupBox6.Controls.Add(label9);
-            groupBox6.Controls.Add(button8);
-            groupBox6.Controls.Add(button9);
-            groupBox6.Controls.Add(button10);
-            groupBox6.Controls.Add(button11);
-            groupBox6.Controls.Add(textBox1);
-            groupBox6.Controls.Add(label5);
-            groupBox6.Controls.Add(textBox2);
-            groupBox6.Controls.Add(label7);
-            groupBox6.Controls.Add(textBox3);
-            groupBox6.Controls.Add(label8);
-            groupBox6.Location = new Point(9, 9);
-            groupBox6.Name = "groupBox6";
-            groupBox6.Size = new Size(640, 85);
-            groupBox6.TabIndex = 3;
-            groupBox6.TabStop = false;
-            // 
-            // button8
-            // 
-            button8.AutoSize = true;
-            button8.Image = Properties.Resources.import_csv_32px;
-            button8.Location = new Point(549, 19);
-            button8.Name = "button8";
-            button8.Size = new Size(75, 57);
-            button8.TabIndex = 9;
-            button8.Text = "Imp. CSV";
-            button8.TextImageRelation = TextImageRelation.ImageAboveText;
-            button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            button9.AutoSize = true;
-            button9.Image = Properties.Resources.json_download_32px;
-            button9.Location = new Point(468, 19);
-            button9.Name = "button9";
-            button9.Size = new Size(75, 57);
-            button9.TabIndex = 8;
-            button9.Text = "Exp. JSON";
-            button9.TextImageRelation = TextImageRelation.ImageAboveText;
-            button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            button10.AutoSize = true;
-            button10.Image = Properties.Resources.export_csv_32px;
-            button10.Location = new Point(387, 19);
-            button10.Name = "button10";
-            button10.Size = new Size(75, 57);
-            button10.TabIndex = 7;
-            button10.Text = "Exp. CSV";
-            button10.TextImageRelation = TextImageRelation.ImageAboveText;
-            button10.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            button11.AutoSize = true;
-            button11.Image = Properties.Resources.book_32px;
-            button11.Location = new Point(306, 19);
-            button11.Name = "button11";
-            button11.Size = new Size(75, 57);
-            button11.TabIndex = 6;
-            button11.Text = "Adicionar";
-            button11.TextImageRelation = TextImageRelation.ImageAboveText;
-            button11.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(149, 48);
-            textBox1.Name = "textBox1";
-            textBox1.PasswordChar = '*';
-            textBox1.Size = new Size(39, 23);
-            textBox1.TabIndex = 5;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(117, 51);
-            label5.Name = "label5";
-            label5.Size = new Size(26, 15);
-            label5.TabIndex = 4;
-            label5.Text = "Pgs";
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(49, 48);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(62, 23);
-            textBox2.TabIndex = 3;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(5, 51);
-            label7.Name = "label7";
-            label7.Size = new Size(29, 15);
-            label7.TabIndex = 2;
-            label7.Text = "Cód";
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(49, 19);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(246, 23);
-            textBox3.TabIndex = 1;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(5, 22);
-            label8.Name = "label8";
-            label8.Size = new Size(33, 15);
-            label8.TabIndex = 0;
-            label8.Text = "Livro";
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(233, 48);
-            textBox4.Name = "textBox4";
-            textBox4.PasswordChar = '*';
-            textBox4.Size = new Size(62, 23);
-            textBox4.TabIndex = 11;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(194, 51);
-            label9.Name = "label9";
-            label9.Size = new Size(33, 15);
-            label9.TabIndex = 10;
-            label9.Text = "Valor";
+            ValorCol.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
+            ValorCol.DataPropertyName = "Codigo";
+            ValorCol.HeaderText = "Valor";
+            ValorCol.MinimumWidth = 100;
+            ValorCol.Name = "ValorCol";
+            ValorCol.ReadOnly = true;
             // 
             // Form1
             // 
@@ -616,15 +661,15 @@
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             tabPage2.ResumeLayout(false);
-            tabPage3.ResumeLayout(false);
-            groupBox3.ResumeLayout(false);
-            groupBox3.PerformLayout();
-            groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             groupBox6.ResumeLayout(false);
             groupBox6.PerformLayout();
+            groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvLivros).EndInit();
+            tabPage3.ResumeLayout(false);
+            groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -661,23 +706,27 @@
         private Button button7;
         private Label label6;
         private GroupBox groupBox6;
-        private TextBox textBox4;
+        private TextBox txtBoxValor;
         private Label label9;
         private Button button8;
         private Button button9;
         private Button button10;
-        private Button button11;
-        private TextBox textBox1;
+        private Button btn_addLivro;
+        private TextBox txtBoxPaginas;
         private Label label5;
-        private TextBox textBox2;
+        private TextBox txtBoxCod;
         private Label label7;
-        private TextBox textBox3;
+        private TextBox txtBoxLivro;
         private Label label8;
         private GroupBox groupBox5;
-        private DataGridView dataGridView2;
+        private DataGridView dgvLivros;
         private GroupBox groupBox4;
         private DataGridView dataGridView1;
         private ComboBox comboBox2;
         private Label label4;
+        private DataGridViewTextBoxColumn IdCol;
+        private DataGridViewTextBoxColumn LivroCol;
+        private DataGridViewTextBoxColumn NumPagCol;
+        private DataGridViewTextBoxColumn ValorCol;
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Livraria
 {
@@ -32,7 +33,7 @@ namespace Livraria
         /// <param name="paginas">Numero de Paginas</param>
         /// <param name="codigo">Código ISBN</param>
         /// <param name="valor"> Preço (BRL)</param>
-        public Livros(string livro, int paginas, double codigo, decimal valor)
+        public Livros(string livro, int paginas, int codigo, int valor)
         {
             Livro = livro;
                
@@ -43,13 +44,19 @@ namespace Livraria
             Valor = valor;
         }
 
-
         public override string ToString()
         {
             return Livro;
         }
 
-        
+        public static Livros LivroFromCsv(string csvLine)
+        {
+            string[] campos = csvLine.Split(',');
+            Livros livrosCSV = new Livros(campos[0], int.Parse(campos[1]), int.Parse(campos[2]), int.Parse(campos[3]));
+            return livrosCSV;
+        }
+
+
 
 
 

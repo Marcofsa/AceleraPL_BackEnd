@@ -8,26 +8,25 @@ namespace Livraria
 {
     public class ListaDeLivros
     {
-        List<Livros> list;
+        List<Livros> LivrosLista;
 
         public ListaDeLivros()
         {
-            list = new List<Livros> ();
+            LivrosLista = new List<Livros> ();
         }
 
         public void CadastraLivro(Livros livro)
         {
-            list.Add(livro);
+            LivrosLista.Add(livro);
         }
 
         public List<Livros> Lista() {
-            return list;
+            return LivrosLista;
         }
 
-        
-
-        
-
-        
+        public List<Livros> GetLivros()
+        {
+            return LivrosLista;
+        }
     }
 }
