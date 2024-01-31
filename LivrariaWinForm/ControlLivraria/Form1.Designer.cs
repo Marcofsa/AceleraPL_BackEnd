@@ -52,10 +52,10 @@
             groupBox6 = new GroupBox();
             txtBoxValor = new TextBox();
             label9 = new Label();
-            button8 = new Button();
-            button9 = new Button();
-            button10 = new Button();
-            btn_addLivro = new Button();
+            btnImportCSV = new Button();
+            btnExportaLivrosJson = new Button();
+            btnExportLivrosCSV = new Button();
+            btn_AddLivro = new Button();
             txtBoxPaginas = new TextBox();
             label5 = new Label();
             txtBoxCod = new TextBox();
@@ -64,6 +64,10 @@
             label8 = new Label();
             groupBox5 = new GroupBox();
             dgvLivros = new DataGridView();
+            IdCol = new DataGridViewTextBoxColumn();
+            LivroCol = new DataGridViewTextBoxColumn();
+            NumPagCol = new DataGridViewTextBoxColumn();
+            ValorCol = new DataGridViewTextBoxColumn();
             tabPage3 = new TabPage();
             groupBox4 = new GroupBox();
             dataGridView1 = new DataGridView();
@@ -78,10 +82,6 @@
             label6 = new Label();
             saveFileDialog1 = new SaveFileDialog();
             openFileDialog1 = new OpenFileDialog();
-            IdCol = new DataGridViewTextBoxColumn();
-            LivroCol = new DataGridViewTextBoxColumn();
-            NumPagCol = new DataGridViewTextBoxColumn();
-            ValorCol = new DataGridViewTextBoxColumn();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -311,10 +311,10 @@
             // 
             groupBox6.Controls.Add(txtBoxValor);
             groupBox6.Controls.Add(label9);
-            groupBox6.Controls.Add(button8);
-            groupBox6.Controls.Add(button9);
-            groupBox6.Controls.Add(button10);
-            groupBox6.Controls.Add(btn_addLivro);
+            groupBox6.Controls.Add(btnImportCSV);
+            groupBox6.Controls.Add(btnExportaLivrosJson);
+            groupBox6.Controls.Add(btnExportLivrosCSV);
+            groupBox6.Controls.Add(btn_AddLivro);
             groupBox6.Controls.Add(txtBoxPaginas);
             groupBox6.Controls.Add(label5);
             groupBox6.Controls.Add(txtBoxCod);
@@ -345,54 +345,55 @@
             label9.TabIndex = 10;
             label9.Text = "Valor";
             // 
-            // button8
+            // btnImportCSV
             // 
-            button8.AutoSize = true;
-            button8.Image = Properties.Resources.import_csv_32px;
-            button8.Location = new Point(549, 19);
-            button8.Name = "button8";
-            button8.Size = new Size(75, 57);
-            button8.TabIndex = 9;
-            button8.Text = "Imp. CSV";
-            button8.TextImageRelation = TextImageRelation.ImageAboveText;
-            button8.UseVisualStyleBackColor = true;
+            btnImportCSV.AutoSize = true;
+            btnImportCSV.Image = Properties.Resources.import_csv_32px;
+            btnImportCSV.Location = new Point(549, 19);
+            btnImportCSV.Name = "btnImportCSV";
+            btnImportCSV.Size = new Size(75, 57);
+            btnImportCSV.TabIndex = 9;
+            btnImportCSV.Text = "Imp. CSV";
+            btnImportCSV.TextImageRelation = TextImageRelation.ImageAboveText;
+            btnImportCSV.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // btnExportaLivrosJson
             // 
-            button9.AutoSize = true;
-            button9.Image = Properties.Resources.json_download_32px;
-            button9.Location = new Point(468, 19);
-            button9.Name = "button9";
-            button9.Size = new Size(75, 57);
-            button9.TabIndex = 8;
-            button9.Text = "Exp. JSON";
-            button9.TextImageRelation = TextImageRelation.ImageAboveText;
-            button9.UseVisualStyleBackColor = true;
+            btnExportaLivrosJson.AutoSize = true;
+            btnExportaLivrosJson.Image = Properties.Resources.json_download_32px;
+            btnExportaLivrosJson.Location = new Point(468, 19);
+            btnExportaLivrosJson.Name = "btnExportaLivrosJson";
+            btnExportaLivrosJson.Size = new Size(75, 57);
+            btnExportaLivrosJson.TabIndex = 8;
+            btnExportaLivrosJson.Text = "Exp. JSON";
+            btnExportaLivrosJson.TextImageRelation = TextImageRelation.ImageAboveText;
+            btnExportaLivrosJson.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // btnExportLivrosCSV
             // 
-            button10.AutoSize = true;
-            button10.Image = Properties.Resources.export_csv_32px;
-            button10.Location = new Point(387, 19);
-            button10.Name = "button10";
-            button10.Size = new Size(75, 57);
-            button10.TabIndex = 7;
-            button10.Text = "Exp. CSV";
-            button10.TextImageRelation = TextImageRelation.ImageAboveText;
-            button10.UseVisualStyleBackColor = true;
+            btnExportLivrosCSV.AutoSize = true;
+            btnExportLivrosCSV.Image = Properties.Resources.export_csv_32px;
+            btnExportLivrosCSV.Location = new Point(387, 19);
+            btnExportLivrosCSV.Name = "btnExportLivrosCSV";
+            btnExportLivrosCSV.Size = new Size(75, 57);
+            btnExportLivrosCSV.TabIndex = 7;
+            btnExportLivrosCSV.Text = "Exp. CSV";
+            btnExportLivrosCSV.TextImageRelation = TextImageRelation.ImageAboveText;
+            btnExportLivrosCSV.UseVisualStyleBackColor = true;
+            btnExportLivrosCSV.Click += btnExportLivrosCSV_Click;
             // 
-            // btn_addLivro
+            // btn_AddLivro
             // 
-            btn_addLivro.AutoSize = true;
-            btn_addLivro.Image = Properties.Resources.book_32px;
-            btn_addLivro.Location = new Point(306, 19);
-            btn_addLivro.Name = "btn_addLivro";
-            btn_addLivro.Size = new Size(75, 57);
-            btn_addLivro.TabIndex = 6;
-            btn_addLivro.Text = "Adicionar";
-            btn_addLivro.TextImageRelation = TextImageRelation.ImageAboveText;
-            btn_addLivro.UseVisualStyleBackColor = true;
-            btn_addLivro.Click += btn_addLivro_Click;
+            btn_AddLivro.AutoSize = true;
+            btn_AddLivro.Image = Properties.Resources.book_32px;
+            btn_AddLivro.Location = new Point(306, 19);
+            btn_AddLivro.Name = "btn_AddLivro";
+            btn_AddLivro.Size = new Size(75, 57);
+            btn_AddLivro.TabIndex = 6;
+            btn_AddLivro.Text = "Adicionar";
+            btn_AddLivro.TextImageRelation = TextImageRelation.ImageAboveText;
+            btn_AddLivro.UseVisualStyleBackColor = true;
+            btn_AddLivro.Click += btn_addLivro_Click;
             // 
             // txtBoxPaginas
             // 
@@ -470,6 +471,40 @@
             dgvLivros.Size = new Size(628, 272);
             dgvLivros.TabIndex = 0;
             dgvLivros.CellContentClick += dgvLivros_CellContentClick;
+            // 
+            // IdCol
+            // 
+            IdCol.DataPropertyName = "Paginas";
+            IdCol.HeaderText = "ID";
+            IdCol.MinimumWidth = 58;
+            IdCol.Name = "IdCol";
+            IdCol.ReadOnly = true;
+            IdCol.Width = 58;
+            // 
+            // LivroCol
+            // 
+            LivroCol.DataPropertyName = "Livro";
+            LivroCol.HeaderText = "Livro";
+            LivroCol.Name = "LivroCol";
+            LivroCol.ReadOnly = true;
+            LivroCol.Width = 350;
+            // 
+            // NumPagCol
+            // 
+            NumPagCol.DataPropertyName = "Valor";
+            NumPagCol.HeaderText = "Num. Páginas";
+            NumPagCol.Name = "NumPagCol";
+            NumPagCol.ReadOnly = true;
+            NumPagCol.Width = 150;
+            // 
+            // ValorCol
+            // 
+            ValorCol.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
+            ValorCol.DataPropertyName = "Codigo";
+            ValorCol.HeaderText = "Valor";
+            ValorCol.MinimumWidth = 100;
+            ValorCol.Name = "ValorCol";
+            ValorCol.ReadOnly = true;
             // 
             // tabPage3
             // 
@@ -608,40 +643,6 @@
             // 
             openFileDialog1.FileName = "openFileDialog1";
             // 
-            // IdCol
-            // 
-            IdCol.DataPropertyName = "Paginas";
-            IdCol.HeaderText = "ID";
-            IdCol.MinimumWidth = 58;
-            IdCol.Name = "IdCol";
-            IdCol.ReadOnly = true;
-            IdCol.Width = 58;
-            // 
-            // LivroCol
-            // 
-            LivroCol.DataPropertyName = "Livro";
-            LivroCol.HeaderText = "Livro";
-            LivroCol.Name = "LivroCol";
-            LivroCol.ReadOnly = true;
-            LivroCol.Width = 350;
-            // 
-            // NumPagCol
-            // 
-            NumPagCol.DataPropertyName = "Valor";
-            NumPagCol.HeaderText = "Num. Páginas";
-            NumPagCol.Name = "NumPagCol";
-            NumPagCol.ReadOnly = true;
-            NumPagCol.Width = 150;
-            // 
-            // ValorCol
-            // 
-            ValorCol.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
-            ValorCol.DataPropertyName = "Codigo";
-            ValorCol.HeaderText = "Valor";
-            ValorCol.MinimumWidth = 100;
-            ValorCol.Name = "ValorCol";
-            ValorCol.ReadOnly = true;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -708,10 +709,10 @@
         private GroupBox groupBox6;
         private TextBox txtBoxValor;
         private Label label9;
-        private Button button8;
-        private Button button9;
-        private Button button10;
-        private Button btn_addLivro;
+        private Button btnImportCSV;
+        private Button btnExportaLivrosJson;
+        private Button btnExportLivrosCSV;
+        private Button btn_AddLivro;
         private TextBox txtBoxPaginas;
         private Label label5;
         private TextBox txtBoxCod;

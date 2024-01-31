@@ -46,7 +46,7 @@ namespace ControlLivraria
                 atualizaDGVLivros();
             }
         }
-        
+
         private void atualizaDGVUsuarios()
         {
             BindingSource bs = new BindingSource();
@@ -79,6 +79,19 @@ namespace ControlLivraria
             }
 
         }
+
+        private void btnExportLivrosCSV_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.Filter = "Arquivo .CSV (.csv) | *.csv";
+            string nomeArquivo;
+            if (DialogResult.OK == saveFileDialog1.ShowDialog())
+            {
+                nomeArquivo = saveFileDialog1.FileName;
+
+                Livros.LivroFromCsv(nomeArquivo);
+            }
+        }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -129,5 +142,7 @@ namespace ControlLivraria
 
         }
         #endregion
+
+       
     }
 }
