@@ -26,6 +26,8 @@ namespace Livraria
         /// </summary>
         public decimal Valor { get; set; }
 
+        public Usuario UsuarioAssociado { get; set; }
+
         /// <summary>
         /// Construtor para Livro padrão 
         /// </summary>
@@ -51,16 +53,14 @@ namespace Livraria
 
         public static Livros LivroFromCsv(string csvLine)
         {
-            string[] campos = csvLine.Split(',');
+            string[] campos = csvLine.Split(' ');
+            if (campos.Length <= 1 )
+            {
+                throw new Exception("O arquivo não contém campos suficientes");
+            }
             Livros livrosCSV = new Livros(campos[0], int.Parse(campos[1]), int.Parse(campos[2]), int.Parse(campos[3]));
             return livrosCSV;
         }
-
-
-
-
-
-
 
     }
 }

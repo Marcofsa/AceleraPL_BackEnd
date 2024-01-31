@@ -29,6 +29,10 @@ namespace ControlLivraria
                 LUsuarios.AdicionaUsuarios(new Usuario(txbNome.Text, txbLogin.Text, txbSenha.Text));
                 atualizaDGVUsuarios();
             }
+
+            comboBoxUsuario.DataSource = LUsuarios.GetUsuarios();
+            comboBoxUsuario.DisplayMember = "Nome";
+            atualizaDGVEmprestimos();
         }
 
         private void btn_addLivro_Click(object sender, EventArgs e)
@@ -45,6 +49,9 @@ namespace ControlLivraria
                 ListaLivros.CadastraLivro(new Livros(txtBoxLivro.Text, codigo, valor, paginas));
                 atualizaDGVLivros();
             }
+            comboBoxLivros.DataSource = ListaLivros.GetLivros();
+            comboBoxLivros.DisplayMember = "Livro";
+            atualizaDGVEmprestimos();
         }
 
         private void atualizaDGVUsuarios()
@@ -59,6 +66,16 @@ namespace ControlLivraria
             BindingSource bs = new BindingSource();
             bs.DataSource = ListaLivros.GetLivros();
             dgvLivros.DataSource = bs;
+        }
+        private void atualizaDGVEmprestimos()
+        {
+            BindingSource bs = new BindingSource();
+
+            bs.DataSource = ListaLivros.GetLivros();
+            dgvEmprestimos.DataSource = bs;
+
+            bs.DataSource = LUsuarios.GetUsuarios();
+            dgvEmprestimos.DataSource = bs;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -117,32 +134,29 @@ namespace ControlLivraria
             atualizaDGVUsuarios();
         }
 
-        #region :: Excluir ::
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private void btnUser_Livro_Click(object sender, EventArgs e)
         {
+            if (comboBoxUsuario.SelectedItem == null || comboBoxLivros.SelectedItem == null)
+            {
+                MessageBox.Show("Por favor, selecione um usuário e um livro para associar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
+            Usuario usuarioSelecionado = (Usuario)comboBoxUsuario.SelectedItem;
+            Livros livroSelecionado = (Livros)comboBoxLivros.SelectedItem;
+
+            if (livroSelecionado.UsuarioAssociado != null)
+            {
+                MessageBox.Show($"O livro '{livroSelecionado.Livro}' já está associado ao usuário '{livroSelecionado.UsuarioAssociado.Nome}'.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            livroSelecionado.UsuarioAssociado = usuarioSelecionado;
+            usuarioSelecionado.LivroAssociado = livroSelecionado;
+
+            atualizaDGVEmprestimos();
+
+            MessageBox.Show($"Usuário '{usuarioSelecionado.Nome}' associado ao livro '{livroSelecionado.Livro}'.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void dgvLivros_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-        #endregion
-
-       
     }
 }

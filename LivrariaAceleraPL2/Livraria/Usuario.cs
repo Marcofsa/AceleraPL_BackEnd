@@ -29,6 +29,9 @@ namespace Livraria
         /// </summary>
         public string Senha { get; set; }
 
+        public Livros LivroAssociado { get; set; }
+
+
         /// <summary>
         /// Construtor para usuario padrão
         /// </summary>
@@ -64,6 +67,10 @@ namespace Livraria
             return usu;
         }
 
-       
+        public override string ToString()
+        {
+            return Nome;
+        }
+
     }
 }

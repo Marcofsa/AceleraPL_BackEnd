@@ -70,15 +70,17 @@
             ValorCol = new DataGridViewTextBoxColumn();
             tabPage3 = new TabPage();
             groupBox4 = new GroupBox();
-            dataGridView1 = new DataGridView();
+            dgvEmprestimos = new DataGridView();
+            Usuario = new DataGridViewTextBoxColumn();
+            Livro = new DataGridViewTextBoxColumn();
             groupBox3 = new GroupBox();
-            comboBox2 = new ComboBox();
+            comboBoxLivros = new ComboBox();
             label4 = new Label();
-            comboBox1 = new ComboBox();
+            comboBoxUsuario = new ComboBox();
             button4 = new Button();
             button5 = new Button();
             button6 = new Button();
-            button7 = new Button();
+            btnUser_Livro = new Button();
             label6 = new Label();
             saveFileDialog1 = new SaveFileDialog();
             openFileDialog1 = new OpenFileDialog();
@@ -93,7 +95,7 @@
             ((System.ComponentModel.ISupportInitialize)dgvLivros).BeginInit();
             tabPage3.SuspendLayout();
             groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvEmprestimos).BeginInit();
             groupBox3.SuspendLayout();
             SuspendLayout();
             // 
@@ -334,7 +336,6 @@
             txtBoxValor.PasswordChar = '*';
             txtBoxValor.Size = new Size(62, 23);
             txtBoxValor.TabIndex = 11;
-            txtBoxValor.TextChanged += textBox4_TextChanged;
             // 
             // label9
             // 
@@ -402,7 +403,6 @@
             txtBoxPaginas.PasswordChar = '*';
             txtBoxPaginas.Size = new Size(39, 23);
             txtBoxPaginas.TabIndex = 5;
-            txtBoxPaginas.TextChanged += textBox1_TextChanged;
             // 
             // label5
             // 
@@ -419,7 +419,6 @@
             txtBoxCod.Name = "txtBoxCod";
             txtBoxCod.Size = new Size(62, 23);
             txtBoxCod.TabIndex = 3;
-            txtBoxCod.TextChanged += textBox2_TextChanged;
             // 
             // label7
             // 
@@ -436,7 +435,6 @@
             txtBoxLivro.Name = "txtBoxLivro";
             txtBoxLivro.Size = new Size(246, 23);
             txtBoxLivro.TabIndex = 1;
-            txtBoxLivro.TextChanged += textBox3_TextChanged;
             // 
             // label8
             // 
@@ -470,7 +468,6 @@
             dgvLivros.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvLivros.Size = new Size(628, 272);
             dgvLivros.TabIndex = 0;
-            dgvLivros.CellContentClick += dgvLivros_CellContentClick;
             // 
             // IdCol
             // 
@@ -520,36 +517,53 @@
             // 
             // groupBox4
             // 
-            groupBox4.Controls.Add(dataGridView1);
+            groupBox4.Controls.Add(dgvEmprestimos);
             groupBox4.Location = new Point(3, 97);
             groupBox4.Name = "groupBox4";
             groupBox4.Size = new Size(640, 295);
             groupBox4.TabIndex = 2;
             groupBox4.TabStop = false;
             // 
-            // dataGridView1
+            // dgvEmprestimos
             // 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(6, 17);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.RowHeadersVisible = false;
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.Size = new Size(628, 272);
-            dataGridView1.TabIndex = 0;
+            dgvEmprestimos.AllowUserToAddRows = false;
+            dgvEmprestimos.AllowUserToDeleteRows = false;
+            dgvEmprestimos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvEmprestimos.Columns.AddRange(new DataGridViewColumn[] { Usuario, Livro });
+            dgvEmprestimos.Location = new Point(6, 17);
+            dgvEmprestimos.Name = "dgvEmprestimos";
+            dgvEmprestimos.ReadOnly = true;
+            dgvEmprestimos.RowHeadersVisible = false;
+            dgvEmprestimos.RowTemplate.Height = 25;
+            dgvEmprestimos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvEmprestimos.Size = new Size(628, 272);
+            dgvEmprestimos.TabIndex = 0;
+            // 
+            // Usuario
+            // 
+            Usuario.HeaderText = "Usuario";
+            Usuario.MinimumWidth = 350;
+            Usuario.Name = "Usuario";
+            Usuario.ReadOnly = true;
+            Usuario.Width = 350;
+            // 
+            // Livro
+            // 
+            Livro.HeaderText = "Livro";
+            Livro.MinimumWidth = 300;
+            Livro.Name = "Livro";
+            Livro.ReadOnly = true;
+            Livro.Width = 300;
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(comboBox2);
+            groupBox3.Controls.Add(comboBoxLivros);
             groupBox3.Controls.Add(label4);
-            groupBox3.Controls.Add(comboBox1);
+            groupBox3.Controls.Add(comboBoxUsuario);
             groupBox3.Controls.Add(button4);
             groupBox3.Controls.Add(button5);
             groupBox3.Controls.Add(button6);
-            groupBox3.Controls.Add(button7);
+            groupBox3.Controls.Add(btnUser_Livro);
             groupBox3.Controls.Add(label6);
             groupBox3.Location = new Point(3, 6);
             groupBox3.Name = "groupBox3";
@@ -557,13 +571,13 @@
             groupBox3.TabIndex = 1;
             groupBox3.TabStop = false;
             // 
-            // comboBox2
+            // comboBoxLivros
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(63, 48);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(232, 23);
-            comboBox2.TabIndex = 12;
+            comboBoxLivros.FormattingEnabled = true;
+            comboBoxLivros.Location = new Point(63, 48);
+            comboBoxLivros.Name = "comboBoxLivros";
+            comboBoxLivros.Size = new Size(232, 23);
+            comboBoxLivros.TabIndex = 12;
             // 
             // label4
             // 
@@ -574,13 +588,13 @@
             label4.TabIndex = 11;
             label4.Text = "Livros";
             // 
-            // comboBox1
+            // comboBoxUsuario
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(63, 19);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(232, 23);
-            comboBox1.TabIndex = 10;
+            comboBoxUsuario.FormattingEnabled = true;
+            comboBoxUsuario.Location = new Point(63, 19);
+            comboBoxUsuario.Name = "comboBoxUsuario";
+            comboBoxUsuario.Size = new Size(232, 23);
+            comboBoxUsuario.TabIndex = 10;
             // 
             // button4
             // 
@@ -618,17 +632,18 @@
             button6.TextImageRelation = TextImageRelation.ImageAboveText;
             button6.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnUser_Livro
             // 
-            button7.AutoSize = true;
-            button7.Image = Properties.Resources.transfer_s32px;
-            button7.Location = new Point(306, 19);
-            button7.Name = "button7";
-            button7.Size = new Size(75, 57);
-            button7.TabIndex = 6;
-            button7.Text = "Adicionar";
-            button7.TextImageRelation = TextImageRelation.ImageAboveText;
-            button7.UseVisualStyleBackColor = true;
+            btnUser_Livro.AutoSize = true;
+            btnUser_Livro.Image = Properties.Resources.transfer_s32px;
+            btnUser_Livro.Location = new Point(306, 19);
+            btnUser_Livro.Name = "btnUser_Livro";
+            btnUser_Livro.Size = new Size(75, 57);
+            btnUser_Livro.TabIndex = 6;
+            btnUser_Livro.Text = "Adicionar";
+            btnUser_Livro.TextImageRelation = TextImageRelation.ImageAboveText;
+            btnUser_Livro.UseVisualStyleBackColor = true;
+            btnUser_Livro.Click += btnUser_Livro_Click;
             // 
             // label6
             // 
@@ -668,7 +683,7 @@
             ((System.ComponentModel.ISupportInitialize)dgvLivros).EndInit();
             tabPage3.ResumeLayout(false);
             groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvEmprestimos).EndInit();
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
             ResumeLayout(false);
@@ -700,11 +715,11 @@
         private SaveFileDialog saveFileDialog1;
         private OpenFileDialog openFileDialog1;
         private GroupBox groupBox3;
-        private ComboBox comboBox1;
+        private ComboBox comboBoxUsuario;
         private Button button4;
         private Button button5;
         private Button button6;
-        private Button button7;
+        private Button btnUser_Livro;
         private Label label6;
         private GroupBox groupBox6;
         private TextBox txtBoxValor;
@@ -722,12 +737,14 @@
         private GroupBox groupBox5;
         private DataGridView dgvLivros;
         private GroupBox groupBox4;
-        private DataGridView dataGridView1;
-        private ComboBox comboBox2;
+        private DataGridView dgvEmprestimos;
+        private ComboBox comboBoxLivros;
         private Label label4;
         private DataGridViewTextBoxColumn IdCol;
         private DataGridViewTextBoxColumn LivroCol;
         private DataGridViewTextBoxColumn NumPagCol;
         private DataGridViewTextBoxColumn ValorCol;
+        private DataGridViewTextBoxColumn Usuario;
+        private DataGridViewTextBoxColumn Livro;
     }
 }
