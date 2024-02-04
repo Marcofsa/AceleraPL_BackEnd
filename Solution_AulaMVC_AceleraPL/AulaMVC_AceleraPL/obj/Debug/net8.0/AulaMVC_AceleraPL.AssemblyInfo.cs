@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AulaMVC_AceleraPL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b59eff725872f7436bac65377c439555e21ce728")]
 [assembly: System.Reflection.AssemblyProductAttribute("AulaMVC_AceleraPL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AulaMVC_AceleraPL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
