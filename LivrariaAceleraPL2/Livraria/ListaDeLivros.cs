@@ -42,30 +42,6 @@ namespace Livraria
 
         }
 
-        #region :: CÓDIGO COMENTADO ::
-        //public void SalvaLocalCSV(string arquivo)
-        //{
-
-        //    string json = JsonSerializer.Serialize(LivrosLista);
-
-        //    try
-        //    {
-        //        XmlNode xml = JsonConvert.DeserializeXmlNode("{records:{record:" + json + "}}");
-
-        //        XmlDocument xmldoc = new XmlDocument(); xmldoc.LoadXml(xml.InnerXml);
-
-        //        DataSet dataSet = new DataSet(); dataSet.ReadXml(new XmlNodeReader(xmldoc));
-
-        //        string csv = DTableToCsv(dataSet.Tables[0], ",");
-
-        //        File.WriteAllText(arquivo, csv);
-        //        //return csv;
-
-        //    }
-        //    catch { throw; }
-        //}
-        #endregion
-
         public void SalvaComoCSV(string arquivo, JsonSerializer jsonSerializer)
         {
             string json;
