@@ -1,36 +1,40 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Livraria
 {
+    [Table("usuario")]
     public class Usuario
     {
 
         /// <summary>
         /// Id do Usuario
         /// </summary>
+        [Key]
         public string Id { get; set; }
 
         /// <summary>
         /// Nome do Usuário
         /// </summary>
-        public string Nome { get; set; }   
+        [Column("Nome")]
+        public string Nome { get; set; }
 
         /// <summary>
         /// login de acesso
         /// </summary>
+        [Column("Login")]
         public string Login { get; set; }
 
         /// <summary>
         /// Senha de acesso
         /// </summary>
+        [Column("Senha")]
         public string Senha { get; set; }
-
-        public Livros LivroAssociado { get; set; }
-
 
         /// <summary>
         /// Construtor para usuario padrão
@@ -65,11 +69,6 @@ namespace Livraria
             string[] campos = csvLine.Split(',');
             Usuario usu = new Usuario(campos[0], campos[1], campos[2], campos[3]);
             return usu;
-        }
-
-        public override string ToString()
-        {
-            return Nome;
         }
 
     }

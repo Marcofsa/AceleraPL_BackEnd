@@ -1,162 +1,126 @@
 using Livraria;
 using System.Collections.Generic;
+using System.Data;
 
 namespace ControlLivraria
 {
     public partial class Form1 : Form
     {
-        ListaDeUsuarios LUsuarios;
-        ListaDeLivros ListaLivros;
+        ListaDeUsuarios usuarios;
+        ListaDeLivros livros;
+        ListaDeEmprestimos emprestimos;
+
+        Livraria.Data.LivrariaContext contextDb;
 
         public Form1()
         {
             InitializeComponent();
-        }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            contextDb = new Livraria.Data.LivrariaContext();
         }
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
+
+            if (txbNome.Text != string.Empty && txbLogin.Text != string.Empty && txbSenha.Text != string.Empty)
+            {
+                Usuario novo = new Usuario(txbNome.Text, txbLogin.Text, txbSenha.Text);
+
+                usuarios.AdicionaUsuarios(novo);
+                contextDb.Usuarios.Add(novo);
+                contextDb.SaveChanges();
+
+                atualizaDGVUsuarios();
+            }
+
             if (string.IsNullOrEmpty(txbNome.Text) || string.IsNullOrEmpty(txbLogin.Text) || string.IsNullOrEmpty(txbSenha.Text))
             {
                 MessageBox.Show("Por favor, preencha todos os campos.");
             }
             else
             {
-                LUsuarios.AdicionaUsuarios(new Usuario(txbNome.Text, txbLogin.Text, txbSenha.Text));
+                usuarios.AdicionaUsuarios(new Usuario(txbNome.Text, txbLogin.Text, txbSenha.Text));
                 atualizaDGVUsuarios();
             }
-
-            comboBoxUsuario.DataSource = LUsuarios.GetUsuarios();
-            comboBoxUsuario.DisplayMember = "Nome";
-            atualizaDGVEmprestimos();
         }
 
         private void btn_addLivro_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtBoxLivro.Text) || string.IsNullOrEmpty(txtBoxCod.Text) || string.IsNullOrEmpty(txtBoxValor.Text))
-            {
-                MessageBox.Show("Por favor, preencha todos os campos.");
-            }
-            else
-            {
-                int valor = int.Parse(txtBoxValor.Text);
-                int paginas = int.Parse(txtBoxPaginas.Text);
-                int codigo = int.Parse(txtBoxCod.Text);
-                ListaLivros.CadastraLivro(new Livros(txtBoxLivro.Text, codigo, valor, paginas));
-                atualizaDGVLivros();
-            }
-            comboBoxLivros.DataSource = ListaLivros.GetLivros();
-            comboBoxLivros.DisplayMember = "Livro";
-            atualizaDGVEmprestimos();
+            livros.CadastraLivro(new Livros(txtBoxLivro.Text, Convert.ToInt32(txtBoxPaginas.Text), Convert.ToInt32(txtBoxCod.Text), Convert.ToDecimal(txtBoxValor.Text)));
+
+            atualizaDBLivros();
+
+        }
+
+        private void atualizaDBLivros()
+        {
+            BindingSource bs = new BindingSource();
+            bs.DataSource = livros.Lista();
+            dgvLivros.DataSource = bs;
+            comboBoxLivros.DataSource = bs;
         }
 
         private void atualizaDGVUsuarios()
         {
             BindingSource bs = new BindingSource();
-            bs.DataSource = LUsuarios.GetUsuarios();
+            bs.DataSource = usuarios.GetUsuarios();
             dgvUsuarios.DataSource = bs;
+            comboBoxUsuario.DataSource = bs;
+
         }
 
-        private void atualizaDGVLivros()
-        {
-            BindingSource bs = new BindingSource();
-            bs.DataSource = ListaLivros.GetLivros();
-            dgvLivros.DataSource = bs;
-        }
         private void atualizaDGVEmprestimos()
         {
             BindingSource bs = new BindingSource();
-
-            bs.DataSource = ListaLivros.GetLivros();
-            dgvEmprestimos.DataSource = bs;
-
-            bs.DataSource = LUsuarios.GetUsuarios();
+            bs.DataSource = emprestimos.ListaEmprestimos;
             dgvEmprestimos.DataSource = bs;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            LUsuarios = new ListaDeUsuarios();
-            ListaLivros = new ListaDeLivros();
+            livros = new ListaDeLivros();
+            usuarios = new ListaDeUsuarios();
+            emprestimos = new ListaDeEmprestimos();
+
+
+            var dadosUsuarios = contextDb.Usuarios.ToList();
+
+            BindingSource bs2 = new BindingSource();
+            bs2.DataSource = dadosUsuarios;
+            dgvUsuarios.DataSource = bs2;
+
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void expCSVUser_Click(object sender, EventArgs e)
         {
-            saveFileDialog1.Filter = "Arquivo .CSV (.csv) | *.csv";
-            string nomeArquivo;
+            saveFileDialog1.Filter = "Arquivos .CSV (*.csv)|*.csv";
             if (DialogResult.OK == saveFileDialog1.ShowDialog())
             {
-                nomeArquivo = saveFileDialog1.FileName;
-
-                LUsuarios.SalvaLocalCSV(nomeArquivo);
+                string arquivo = saveFileDialog1.FileName;
+                usuarios.SalvaLocalCSV(arquivo);
             }
-
         }
 
-        private void btnExportLivrosCSV_Click(object sender, EventArgs e)
+        private void importCSVUser_Click(object sender, EventArgs e)
         {
-            saveFileDialog1.Filter = "Arquivo .CSV (.csv) | *.csv";
-            string nomeArquivo;
+            openFileDialog1.Filter = "Arquivos .CSV (*.csv)|*.csv";
+
+            if (DialogResult.OK == openFileDialog1.ShowDialog())
+            {
+                string arquivo = openFileDialog1.FileName;
+                usuarios.CarregaLocal(arquivo);
+                atualizaDGVUsuarios();
+            }
+        }
+
+        private void expJSONUser_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.Filter = "Arquivos .JSON (*.json)|*.json";
             if (DialogResult.OK == saveFileDialog1.ShowDialog())
             {
-                nomeArquivo = saveFileDialog1.FileName;
-
-                Livros.LivroFromCsv(nomeArquivo);
+                string arquivo = saveFileDialog1.FileName;
+                emprestimos.SalvaLocalJSON(arquivo);
             }
-        }
-
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            saveFileDialog1.Filter = "Arquivo .JSON (.json) | *.json";
-            string nomeArquivo;
-            if (DialogResult.OK == saveFileDialog1.ShowDialog())
-            {
-                nomeArquivo = saveFileDialog1.FileName;
-
-                LUsuarios.SalvaLocalJSON(nomeArquivo);
-            }
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-            openFileDialog1.Filter = "Arquivo .CSV (.csv) | *.csv";
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                LUsuarios.CarregaLocal(openFileDialog1.FileName);
-            }
-
-            atualizaDGVUsuarios();
-        }
-
-        private void btnUser_Livro_Click(object sender, EventArgs e)
-        {
-            if (comboBoxUsuario.SelectedItem == null || comboBoxLivros.SelectedItem == null)
-            {
-                MessageBox.Show("Por favor, selecione um usuário e um livro para associar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            Usuario usuarioSelecionado = (Usuario)comboBoxUsuario.SelectedItem;
-            Livros livroSelecionado = (Livros)comboBoxLivros.SelectedItem;
-
-            if (livroSelecionado.UsuarioAssociado != null)
-            {
-                MessageBox.Show($"O livro '{livroSelecionado.Livro}' já está associado ao usuário '{livroSelecionado.UsuarioAssociado.Nome}'.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            livroSelecionado.UsuarioAssociado = usuarioSelecionado;
-            usuarioSelecionado.LivroAssociado = livroSelecionado;
-
-            atualizaDGVEmprestimos();
-
-            MessageBox.Show($"Usuário '{usuarioSelecionado.Nome}' associado ao livro '{livroSelecionado.Livro}'.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace Livraria
@@ -18,6 +19,13 @@ namespace Livraria
         public void AdicionaEmprestimo(Usuario usuario, Livros livro)
         {
             ListaEmprestimos.Add(new Emprestimo(livro,usuario));
+        }
+
+        public void SalvaLocalJSON(string arquivo)
+        {
+            string json = JsonSerializer.Serialize(ListaEmprestimos);
+            File.WriteAllText(arquivo, json);
+
         }
     }
 }

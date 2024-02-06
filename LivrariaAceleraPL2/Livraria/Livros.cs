@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,6 +9,7 @@ using System.Xml.Serialization;
 
 namespace Livraria
 {
+    [Table("Livro")]
     public class Livros
     {
         /// <summary>
@@ -16,17 +19,19 @@ namespace Livraria
         /// <summary>
         /// Quantidade de Páginas
         /// </summary>
+        [Column("PG")]
         public int Paginas { get; set; }
+
         /// <summary>
         /// CODIGO ISBN (International Standard Book Number)
         /// </summary>
-        public double Codigo { get; set; }
+        [Key]
+        [Column("COD")]
+        public int Codigo { get; set; }
         /// <summary>
         /// Valor do Livro em Reais (BRL)
         /// </summary>
         public decimal Valor { get; set; }
-
-        public Usuario UsuarioAssociado { get; set; }
 
         /// <summary>
         /// Construtor para Livro padrão 
@@ -35,7 +40,7 @@ namespace Livraria
         /// <param name="paginas">Numero de Paginas</param>
         /// <param name="codigo">Código ISBN</param>
         /// <param name="valor"> Preço (BRL)</param>
-        public Livros(string livro, int paginas, int codigo, int valor)
+        public Livros(string livro, int paginas, int codigo, decimal valor)
         {
             Livro = livro;
                

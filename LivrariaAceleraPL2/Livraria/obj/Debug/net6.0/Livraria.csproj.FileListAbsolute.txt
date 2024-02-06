@@ -36,3 +36,5 @@ E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaAceleraPL2\Livraria\obj\Debug\ne
 E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaAceleraPL2\Livraria\obj\Debug\net6.0\refint\Livraria.dll
 E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaAceleraPL2\Livraria\obj\Debug\net6.0\Livraria.pdb
 E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaAceleraPL2\Livraria\obj\Debug\net6.0\ref\Livraria.dll
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaAceleraPL2\Livraria\bin\Debug\net6.0\Livraria.runtimeconfig.json
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaAceleraPL2\Livraria\obj\Debug\net6.0\Livraria.genruntimeconfig.cache

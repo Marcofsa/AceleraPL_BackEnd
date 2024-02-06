@@ -38,9 +38,9 @@
             Login = new DataGridViewTextBoxColumn();
             Senha = new DataGridViewTextBoxColumn();
             groupBox1 = new GroupBox();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
+            importCSVUser = new Button();
+            expJSONUser = new Button();
+            expCSVUser = new Button();
             btnAdicionar = new Button();
             txbSenha = new TextBox();
             label3 = new Label();
@@ -180,9 +180,9 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(button3);
-            groupBox1.Controls.Add(button2);
-            groupBox1.Controls.Add(button1);
+            groupBox1.Controls.Add(importCSVUser);
+            groupBox1.Controls.Add(expJSONUser);
+            groupBox1.Controls.Add(expCSVUser);
             groupBox1.Controls.Add(btnAdicionar);
             groupBox1.Controls.Add(txbSenha);
             groupBox1.Controls.Add(label3);
@@ -196,44 +196,44 @@
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             // 
-            // button3
+            // importCSVUser
             // 
-            button3.AutoSize = true;
-            button3.Image = Properties.Resources.import_csv_32px;
-            button3.Location = new Point(549, 19);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 57);
-            button3.TabIndex = 9;
-            button3.Text = "Imp. CSV";
-            button3.TextImageRelation = TextImageRelation.ImageAboveText;
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            importCSVUser.AutoSize = true;
+            importCSVUser.Image = Properties.Resources.import_csv_32px;
+            importCSVUser.Location = new Point(549, 19);
+            importCSVUser.Name = "importCSVUser";
+            importCSVUser.Size = new Size(75, 57);
+            importCSVUser.TabIndex = 9;
+            importCSVUser.Text = "Imp. CSV";
+            importCSVUser.TextImageRelation = TextImageRelation.ImageAboveText;
+            importCSVUser.UseVisualStyleBackColor = true;
+            importCSVUser.Click += importCSVUser_Click;
             // 
-            // button2
+            // expJSONUser
             // 
-            button2.AutoSize = true;
-            button2.Image = Properties.Resources.json_download_32px;
-            button2.Location = new Point(468, 19);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 57);
-            button2.TabIndex = 8;
-            button2.Text = "Exp. JSON";
-            button2.TextImageRelation = TextImageRelation.ImageAboveText;
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            expJSONUser.AutoSize = true;
+            expJSONUser.Image = Properties.Resources.json_download_32px;
+            expJSONUser.Location = new Point(468, 19);
+            expJSONUser.Name = "expJSONUser";
+            expJSONUser.Size = new Size(75, 57);
+            expJSONUser.TabIndex = 8;
+            expJSONUser.Text = "Exp. JSON";
+            expJSONUser.TextImageRelation = TextImageRelation.ImageAboveText;
+            expJSONUser.UseVisualStyleBackColor = true;
+            expJSONUser.Click += expJSONUser_Click;
             // 
-            // button1
+            // expCSVUser
             // 
-            button1.AutoSize = true;
-            button1.Image = Properties.Resources.export_csv_32px;
-            button1.Location = new Point(387, 19);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 57);
-            button1.TabIndex = 7;
-            button1.Text = "Exp. CSV";
-            button1.TextImageRelation = TextImageRelation.ImageAboveText;
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click_1;
+            expCSVUser.AutoSize = true;
+            expCSVUser.Image = Properties.Resources.export_csv_32px;
+            expCSVUser.Location = new Point(387, 19);
+            expCSVUser.Name = "expCSVUser";
+            expCSVUser.Size = new Size(75, 57);
+            expCSVUser.TabIndex = 7;
+            expCSVUser.Text = "Exp. CSV";
+            expCSVUser.TextImageRelation = TextImageRelation.ImageAboveText;
+            expCSVUser.UseVisualStyleBackColor = true;
+            expCSVUser.Click += expCSVUser_Click;
             // 
             // btnAdicionar
             // 
@@ -381,7 +381,6 @@
             btnExportLivrosCSV.Text = "Exp. CSV";
             btnExportLivrosCSV.TextImageRelation = TextImageRelation.ImageAboveText;
             btnExportLivrosCSV.UseVisualStyleBackColor = true;
-            btnExportLivrosCSV.Click += btnExportLivrosCSV_Click;
             // 
             // btn_AddLivro
             // 
@@ -643,7 +642,6 @@
             btnUser_Livro.Text = "Adicionar";
             btnUser_Livro.TextImageRelation = TextImageRelation.ImageAboveText;
             btnUser_Livro.UseVisualStyleBackColor = true;
-            btnUser_Livro.Click += btnUser_Livro_Click;
             // 
             // label6
             // 
@@ -709,9 +707,9 @@
         private DataGridViewTextBoxColumn Nome;
         private DataGridViewTextBoxColumn Login;
         private DataGridViewTextBoxColumn Senha;
-        private Button button3;
-        private Button button2;
-        private Button button1;
+        private Button importCSVUser;
+        private Button expJSONUser;
+        private Button expCSVUser;
         private SaveFileDialog saveFileDialog1;
         private OpenFileDialog openFileDialog1;
         private GroupBox groupBox3;
