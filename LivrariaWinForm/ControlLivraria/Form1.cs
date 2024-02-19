@@ -122,5 +122,17 @@ namespace ControlLivraria
                 emprestimos.SalvaLocalJSON(arquivo);
             }
         }
+
+        private void btn_filtro_Click(object sender, EventArgs e)
+        {
+            BindingSource bs = new BindingSource();
+
+            var textoFiltro = txbFiltro.Text;
+
+            bs.DataSource = usuarios.GetUsuarios().Where((usuario) => usuario.Nome.Contains(textoFiltro)).ToList();
+
+            dgvUsuarios.DataSource = bs; 
+            
+        }
     }
 }

@@ -84,6 +84,8 @@
             label6 = new Label();
             saveFileDialog1 = new SaveFileDialog();
             openFileDialog1 = new OpenFileDialog();
+            txbFiltro = new TextBox();
+            btn_filtro = new Button();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -124,6 +126,8 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(btn_filtro);
+            groupBox2.Controls.Add(txbFiltro);
             groupBox2.Controls.Add(dgvUsuarios);
             groupBox2.Location = new Point(6, 97);
             groupBox2.Name = "groupBox2";
@@ -137,13 +141,13 @@
             dgvUsuarios.AllowUserToDeleteRows = false;
             dgvUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvUsuarios.Columns.AddRange(new DataGridViewColumn[] { Id, Nome, Login, Senha });
-            dgvUsuarios.Location = new Point(6, 17);
+            dgvUsuarios.Location = new Point(6, 51);
             dgvUsuarios.Name = "dgvUsuarios";
             dgvUsuarios.ReadOnly = true;
             dgvUsuarios.RowHeadersVisible = false;
             dgvUsuarios.RowTemplate.Height = 25;
             dgvUsuarios.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvUsuarios.Size = new Size(628, 272);
+            dgvUsuarios.Size = new Size(628, 238);
             dgvUsuarios.TabIndex = 0;
             // 
             // Id
@@ -656,6 +660,23 @@
             // 
             openFileDialog1.FileName = "openFileDialog1";
             // 
+            // txbFiltro
+            // 
+            txbFiltro.Location = new Point(6, 22);
+            txbFiltro.Name = "txbFiltro";
+            txbFiltro.Size = new Size(164, 23);
+            txbFiltro.TabIndex = 1;
+            // 
+            // btn_filtro
+            // 
+            btn_filtro.Location = new Point(176, 21);
+            btn_filtro.Name = "btn_filtro";
+            btn_filtro.Size = new Size(91, 24);
+            btn_filtro.TabIndex = 2;
+            btn_filtro.Text = "Filtrar";
+            btn_filtro.UseVisualStyleBackColor = true;
+            btn_filtro.Click += btn_filtro_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -671,6 +692,7 @@
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvUsuarios).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
@@ -744,5 +766,7 @@
         private DataGridViewTextBoxColumn ValorCol;
         private DataGridViewTextBoxColumn Usuario;
         private DataGridViewTextBoxColumn Livro;
+        private TextBox txbFiltro;
+        private Button btn_filtro;
     }
 }
