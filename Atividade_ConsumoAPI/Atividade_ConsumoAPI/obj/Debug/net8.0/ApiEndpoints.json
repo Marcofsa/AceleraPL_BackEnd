@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "ContainingType": "Atividade_ConsumoAPI.Controllers.PokemonController",
+    "Method": "GetPokemon",
+    "RelativePath": "Pokemon/{nomePokemon}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nomePokemon",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
