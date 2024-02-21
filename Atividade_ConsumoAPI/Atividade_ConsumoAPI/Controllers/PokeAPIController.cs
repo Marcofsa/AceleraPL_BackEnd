@@ -11,7 +11,7 @@ namespace Atividade_ConsumoAPI.Controllers
         }
 
         [ApiController]
-        [Route("[controller]")]
+        [Route("[controller][action]")]
         public class PokemonController : ControllerBase
         {
             private readonly PokeApiService _pokeApiService;
@@ -21,12 +21,15 @@ namespace Atividade_ConsumoAPI.Controllers
                 _pokeApiService = pokeApiService;
             }
 
-            [HttpGet("{name}")]
-            public async Task<IActionResult> GetPokemon(string name)
+            [HttpGet("{nomePokemon}")]
+            public async Task<IActionResult> GetPokemon(string nomePokemon)
             {
-                var pokemon = await _pokeApiService.GetPokemonAsync(name);
-                if (pokemon == null)
-                    return NotFound();
+                var pokemon = await _pokeApiService.GetPokemonAsync(nomePokemon);
+
+                if (pokemon == null) 
+                { 
+                  return NotFound();
+                }
 
                 return Ok(pokemon);
             }

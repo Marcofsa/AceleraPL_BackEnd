@@ -1,22 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\ACELERA_PL(BACK-END)\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\",
+  "WorkspaceRootPath": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{731053C0-A368-486D-8CF2-8A139BA301BF}|Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj|e:\\acelera_pl(back-end)\\acelerapl_backend\\atividade_consumoapi\\atividade_consumoapi\\controllers\\pokeapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{731053C0-A368-486D-8CF2-8A139BA301BF}|Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj|solutionrelative:atividade_consumoapi\\controllers\\pokeapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{731053C0-A368-486D-8CF2-8A139BA301BF}|Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj|e:\\acelera_pl backend\\acelerapl_backend\\atividade_consumoapi\\atividade_consumoapi\\pokeapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{731053C0-A368-486D-8CF2-8A139BA301BF}|Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj|solutionrelative:atividade_consumoapi\\pokeapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{731053C0-A368-486D-8CF2-8A139BA301BF}|Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj|e:\\acelera_pl(back-end)\\acelerapl_backend\\atividade_consumoapi\\atividade_consumoapi\\services\\pokeapi_service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{731053C0-A368-486D-8CF2-8A139BA301BF}|Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj|e:\\acelera_pl backend\\acelerapl_backend\\atividade_consumoapi\\atividade_consumoapi\\services\\pokeapi_service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{731053C0-A368-486D-8CF2-8A139BA301BF}|Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj|solutionrelative:atividade_consumoapi\\services\\pokeapi_service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{731053C0-A368-486D-8CF2-8A139BA301BF}|Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj|e:\\acelera_pl(back-end)\\acelerapl_backend\\atividade_consumoapi\\atividade_consumoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{731053C0-A368-486D-8CF2-8A139BA301BF}|Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj|solutionrelative:atividade_consumoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{731053C0-A368-486D-8CF2-8A139BA301BF}|Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj|E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\atividade_consumoapi\\controllers\\pokeapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{731053C0-A368-486D-8CF2-8A139BA301BF}|Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj|solutionrelative:atividade_consumoapi\\controllers\\pokeapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{731053C0-A368-486D-8CF2-8A139BA301BF}|Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj|e:\\acelera_pl(back-end)\\acelerapl_backend\\atividade_consumoapi\\atividade_consumoapi\\poke\\pokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{731053C0-A368-486D-8CF2-8A139BA301BF}|Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj|solutionrelative:atividade_consumoapi\\poke\\pokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{731053C0-A368-486D-8CF2-8A139BA301BF}|Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj|e:\\acelera_pl backend\\acelerapl_backend\\atividade_consumoapi\\atividade_consumoapi\\models\\pokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{731053C0-A368-486D-8CF2-8A139BA301BF}|Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj|solutionrelative:atividade_consumoapi\\models\\pokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{731053C0-A368-486D-8CF2-8A139BA301BF}|Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj|E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\atividade_consumoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{731053C0-A368-486D-8CF2-8A139BA301BF}|Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj|solutionrelative:atividade_consumoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,54 +38,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Pokemon.cs",
-              "DocumentMoniker": "E:\\ACELERA_PL(BACK-END)\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\Poke\\Pokemon.cs",
-              "RelativeDocumentMoniker": "Atividade_ConsumoAPI\\Poke\\Pokemon.cs",
-              "ToolTip": "E:\\ACELERA_PL(BACK-END)\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\Poke\\Pokemon.cs",
-              "RelativeToolTip": "Atividade_ConsumoAPI\\Poke\\Pokemon.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "PokeApiClient.cs",
+              "DocumentMoniker": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\PokeApiClient.cs",
+              "RelativeDocumentMoniker": "Atividade_ConsumoAPI\\PokeApiClient.cs",
+              "ToolTip": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\PokeApiClient.cs",
+              "RelativeToolTip": "Atividade_ConsumoAPI\\PokeApiClient.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwCAAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-21T14:07:02.602Z",
+              "WhenOpened": "2024-02-21T18:45:51.555Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "PokeAPI_Service.cs",
-              "DocumentMoniker": "E:\\ACELERA_PL(BACK-END)\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\Services\\PokeAPI_Service.cs",
+              "DocumentMoniker": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\Services\\PokeAPI_Service.cs",
               "RelativeDocumentMoniker": "Atividade_ConsumoAPI\\Services\\PokeAPI_Service.cs",
-              "ToolTip": "E:\\ACELERA_PL(BACK-END)\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\Services\\PokeAPI_Service.cs",
+              "ToolTip": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\Services\\PokeAPI_Service.cs",
               "RelativeToolTip": "Atividade_ConsumoAPI\\Services\\PokeAPI_Service.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-21T14:05:12.085Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "PokeAPIController.cs",
-              "DocumentMoniker": "E:\\ACELERA_PL(BACK-END)\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\Controllers\\PokeAPIController.cs",
+              "DocumentMoniker": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\Controllers\\PokeAPIController.cs",
               "RelativeDocumentMoniker": "Atividade_ConsumoAPI\\Controllers\\PokeAPIController.cs",
-              "ToolTip": "E:\\ACELERA_PL(BACK-END)\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\Controllers\\PokeAPIController.cs",
+              "ToolTip": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\Controllers\\PokeAPIController.cs",
               "RelativeToolTip": "Atividade_ConsumoAPI\\Controllers\\PokeAPIController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAXAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-21T14:01:14.692Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "E:\\ACELERA_PL(BACK-END)\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\Program.cs",
+              "DocumentMoniker": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\Program.cs",
               "RelativeDocumentMoniker": "Atividade_ConsumoAPI\\Program.cs",
-              "ToolTip": "E:\\ACELERA_PL(BACK-END)\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\Program.cs",
+              "ToolTip": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\Program.cs",
               "RelativeToolTip": "Atividade_ConsumoAPI\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-21T13:59:21.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Pokemon.cs",
+              "DocumentMoniker": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\Models\\Pokemon.cs",
+              "RelativeDocumentMoniker": "Atividade_ConsumoAPI\\Models\\Pokemon.cs",
+              "ToolTip": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\Models\\Pokemon.cs",
+              "RelativeToolTip": "Atividade_ConsumoAPI\\Models\\Pokemon.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T14:07:02.602Z",
               "EditorCaption": ""
             }
           ]

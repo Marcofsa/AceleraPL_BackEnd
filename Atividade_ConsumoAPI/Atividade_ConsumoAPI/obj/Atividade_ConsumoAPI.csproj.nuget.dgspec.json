@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ACELERA_PL(BACK-END)\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj": {}
+    "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj": {}
   },
   "projects": {
-    "E:\\ACELERA_PL(BACK-END)\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj": {
+    "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ACELERA_PL(BACK-END)\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj",
+        "projectUniqueName": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj",
         "projectName": "Atividade_ConsumoAPI",
-        "projectPath": "E:\\ACELERA_PL(BACK-END)\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj",
+        "projectPath": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI.csproj",
         "packagesPath": "C:\\Users\\garen\\.nuget\\packages\\",
-        "outputPath": "E:\\ACELERA_PL(BACK-END)\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\obj\\",
+        "outputPath": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Atividade_ConsumoAPI\\Atividade_ConsumoAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,7 +52,7 @@
           "dependencies": {
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.5.0, )"
             },
             "System.Net.Http.Json": {
               "target": "Package",

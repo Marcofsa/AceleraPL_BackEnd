@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Atividade_ConsumoAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47dc8d826354013bcfa39a4bba3f8a33a539de8c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Atividade_ConsumoAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Atividade_ConsumoAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

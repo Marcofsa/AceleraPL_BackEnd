@@ -1,4 +1,6 @@
 
+using Atividade_ConsumoAPI.Poke;
+
 namespace Atividade_ConsumoAPI
 {
     public class Program

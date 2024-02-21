@@ -30,3 +30,36 @@ E:\ACELERA_PL(BACK-END)\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_Consumo
 E:\ACELERA_PL(BACK-END)\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\Atividade_ConsumoAPI.pdb
 E:\ACELERA_PL(BACK-END)\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\Atividade_ConsumoAPI.genruntimeconfig.cache
 E:\ACELERA_PL(BACK-END)\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\ref\Atividade_ConsumoAPI.dll
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\bin\Debug\net8.0\appsettings.Development.json
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\bin\Debug\net8.0\appsettings.json
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\bin\Debug\net8.0\Atividade_ConsumoAPI.exe
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\bin\Debug\net8.0\Atividade_ConsumoAPI.deps.json
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\bin\Debug\net8.0\Atividade_ConsumoAPI.runtimeconfig.json
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\bin\Debug\net8.0\Atividade_ConsumoAPI.dll
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\bin\Debug\net8.0\Atividade_ConsumoAPI.pdb
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\Atividade_ConsumoAPI.csproj.AssemblyReference.cache
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\Atividade_ConsumoAPI.GeneratedMSBuildEditorConfig.editorconfig
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\Atividade_ConsumoAPI.AssemblyInfoInputs.cache
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\Atividade_ConsumoAPI.AssemblyInfo.cs
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\Atividade_ConsumoAPI.csproj.CoreCompileInputs.cache
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\Atividade_ConsumoAPI.MvcApplicationPartsAssemblyInfo.cs
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\Atividade_ConsumoAPI.MvcApplicationPartsAssemblyInfo.cache
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\Atividade_ConsumoAPI.sourcelink.json
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\staticwebassets.build.json
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\staticwebassets.development.json
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\staticwebassets\msbuild.Atividade_ConsumoAPI.Microsoft.AspNetCore.StaticWebAssets.props
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.Atividade_ConsumoAPI.props
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Atividade_ConsumoAPI.props
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Atividade_ConsumoAPI.props
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\staticwebassets.pack.json
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\scopedcss\bundle\Atividade_ConsumoAPI.styles.css
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\Atividad.96E2866B.Up2Date
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\Atividade_ConsumoAPI.dll
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\refint\Atividade_ConsumoAPI.dll
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\Atividade_ConsumoAPI.pdb
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\Atividade_ConsumoAPI.genruntimeconfig.cache
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\Atividade_ConsumoAPI\Atividade_ConsumoAPI\obj\Debug\net8.0\ref\Atividade_ConsumoAPI.dll

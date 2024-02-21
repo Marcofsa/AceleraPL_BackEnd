@@ -6,7 +6,7 @@
         public int Altura { get; set; }
         public int Peso { get; set; }
         public string Tipo { get; set; }
-
-     
+        public int Id { get; internal set; }
     }
 }
+
