@@ -3,15 +3,8 @@ using static Atividade_ConsumoAPI.Services.PokeAPI_Service;
 
 namespace Atividade_ConsumoAPI.Controllers
 {
-    public class PokeAPIController : Controller
-    {
-        public IActionResult Index()
-        {
-            return View();
-        }
-
         [ApiController]
-        [Route("[controller][action]")]
+        [Route("[controller]")]
         public class PokemonController : ControllerBase
         {
             private readonly PokeApiService _pokeApiService;
@@ -35,4 +28,3 @@ namespace Atividade_ConsumoAPI.Controllers
             }
         }
     }
-}
