@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\LivrariaAceleraPL2\Livraria\Livraria.csproj" />
+    <ProjectReference Include="..\..\Livraria\Livraria.csproj" />
   </ItemGroup>
 
   <ItemGroup>

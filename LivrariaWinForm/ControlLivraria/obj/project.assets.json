@@ -1878,6 +1878,9 @@
           "projectReferences": {
             "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\LivrariaAceleraPL2\\Livraria\\Livraria.csproj": {
               "projectPath": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\LivrariaAceleraPL2\\Livraria\\Livraria.csproj"
+            },
+            "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Livraria\\Livraria.csproj": {
+              "projectPath": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Livraria\\Livraria.csproj"
             }
           }
         }

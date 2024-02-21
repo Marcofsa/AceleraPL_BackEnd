@@ -37,7 +37,6 @@ E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaWinForm\ControlLivraria\obj\Debu
 E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaWinForm\ControlLivraria\obj\Debug\net6.0-windows\ControlLivraria.AssemblyInfo.cs
 E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaWinForm\ControlLivraria\obj\Debug\net6.0-windows\ControlLivraria.csproj.CoreCompileInputs.cache
 E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaWinForm\ControlLivraria\obj\Debug\net6.0-windows\ControlLivraria.sourcelink.json
-E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaWinForm\ControlLivraria\obj\Debug\net6.0-windows\ControlLivraria.csproj.CopyComplete
 E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaWinForm\ControlLivraria\obj\Debug\net6.0-windows\ControlLivraria.dll
 E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaWinForm\ControlLivraria\obj\Debug\net6.0-windows\refint\ControlLivraria.dll
 E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaWinForm\ControlLivraria\obj\Debug\net6.0-windows\ControlLivraria.pdb
@@ -65,3 +64,4 @@ E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaWinForm\ControlLivraria\bin\Debu
 E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaWinForm\ControlLivraria\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
 E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaWinForm\ControlLivraria\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaWinForm\ControlLivraria\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\ACELERA_PL BackEnd\AceleraPL_BackEnd\LivrariaWinForm\ControlLivraria\obj\Debug\net6.0-windows\ControlL.E316226B.Up2Date
