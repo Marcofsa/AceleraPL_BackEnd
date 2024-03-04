@@ -3,27 +3,21 @@
   "WorkspaceRootPath": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\LivrariaWinForm\\ControlLivraria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7C195E97-4987-43A2-B770-B3322F5824E5}|ControlLivraria.csproj|e:\\acelera_pl backend\\acelerapl_backend\\livrariawinform\\controllivraria\\dao\\livrariacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C195E97-4987-43A2-B770-B3322F5824E5}|ControlLivraria.csproj|solutionrelative:dao\\livrariacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C195E97-4987-43A2-B770-B3322F5824E5}|ControlLivraria.csproj|e:\\acelera_pl backend\\acelerapl_backend\\livrariawinform\\controllivraria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C195E97-4987-43A2-B770-B3322F5824E5}|ControlLivraria.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{421F6177-E011-4D09-A787-A3FB9A51D993}|..\\..\\Livraria\\Livraria.csproj|e:\\acelera_pl backend\\acelerapl_backend\\livraria\\data\\livrariacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C195E97-4987-43A2-B770-B3322F5824E5}|ControlLivraria.csproj|e:\\acelera_pl backend\\acelerapl_backend\\livrariawinform\\controllivraria\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C195E97-4987-43A2-B770-B3322F5824E5}|ControlLivraria.csproj|solutionrelative:dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C195E97-4987-43A2-B770-B3322F5824E5}|ControlLivraria.csproj|e:\\acelera_pl backend\\acelerapl_backend\\livrariawinform\\controllivraria\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7C195E97-4987-43A2-B770-B3322F5824E5}|ControlLivraria.csproj|E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\LivrariaWinForm\\ControlLivraria\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C195E97-4987-43A2-B770-B3322F5824E5}|ControlLivraria.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7C195E97-4987-43A2-B770-B3322F5824E5}|ControlLivraria.csproj|e:\\acelera_pl backend\\acelerapl_backend\\livrariawinform\\controllivraria\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7C195E97-4987-43A2-B770-B3322F5824E5}|ControlLivraria.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{421F6177-E011-4D09-A787-A3FB9A51D993}|..\\..\\Livraria\\Livraria.csproj|e:\\acelera_pl backend\\acelerapl_backend\\livraria\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{421F6177-E011-4D09-A787-A3FB9A51D993}|..\\..\\Livraria\\Livraria.csproj|e:\\acelera_pl backend\\acelerapl_backend\\livraria\\data\\livrariacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{421F6177-E011-4D09-A787-A3FB9A51D993}|..\\..\\Livraria\\Livraria.csproj|e:\\acelera_pl backend\\acelerapl_backend\\livraria\\livros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,7 +27,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -41,79 +35,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LivrariaContext.cs",
-              "DocumentMoniker": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Livraria\\Data\\LivrariaContext.cs",
-              "RelativeDocumentMoniker": "..\\..\\Livraria\\Data\\LivrariaContext.cs",
-              "ToolTip": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Livraria\\Data\\LivrariaContext.cs",
-              "RelativeToolTip": "..\\..\\Livraria\\Data\\LivrariaContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-20T01:05:37.601Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UsuarioDTO.cs",
-              "DocumentMoniker": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\LivrariaWinForm\\ControlLivraria\\DTOs\\UsuarioDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\UsuarioDTO.cs",
-              "ToolTip": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\LivrariaWinForm\\ControlLivraria\\DTOs\\UsuarioDTO.cs",
-              "RelativeToolTip": "DTOs\\UsuarioDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-20T00:47:30.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LivrariaContext.cs",
-              "DocumentMoniker": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\LivrariaWinForm\\ControlLivraria\\DAO\\LivrariaContext.cs",
-              "RelativeDocumentMoniker": "DAO\\LivrariaContext.cs",
-              "ToolTip": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\LivrariaWinForm\\ControlLivraria\\DAO\\LivrariaContext.cs",
-              "RelativeToolTip": "DAO\\LivrariaContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-20T00:46:13.233Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\LivrariaWinForm\\ControlLivraria\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\LivrariaWinForm\\ControlLivraria\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-20T00:05:17.25Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Form1.cs",
               "DocumentMoniker": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\LivrariaWinForm\\ControlLivraria\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\LivrariaWinForm\\ControlLivraria\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "ViewState": "AQIAAGsAAAAAAAAAAAASwIcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-19T22:53:08.286Z"
+              "WhenOpened": "2024-02-27T01:07:16.193Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\LivrariaWinForm\\ControlLivraria\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\LivrariaWinForm\\ControlLivraria\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-19T22:53:03.741Z",
+              "WhenOpened": "2024-02-27T01:01:48.323Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Livraria\\Usuario.cs",
+              "RelativeDocumentMoniker": "..\\..\\Livraria\\Usuario.cs",
+              "ToolTip": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Livraria\\Usuario.cs",
+              "RelativeToolTip": "..\\..\\Livraria\\Usuario.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAWwFQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T23:26:45.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Livros.cs",
+              "DocumentMoniker": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Livraria\\Livros.cs",
+              "RelativeDocumentMoniker": "..\\..\\Livraria\\Livros.cs",
+              "ToolTip": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Livraria\\Livros.cs",
+              "RelativeToolTip": "..\\..\\Livraria\\Livros.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAcwDsAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T23:15:30.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LivrariaContext.cs",
+              "DocumentMoniker": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Livraria\\Data\\LivrariaContext.cs",
+              "RelativeDocumentMoniker": "..\\..\\Livraria\\Data\\LivrariaContext.cs",
+              "ToolTip": "E:\\ACELERA_PL BackEnd\\AceleraPL_BackEnd\\Livraria\\Data\\LivrariaContext.cs",
+              "RelativeToolTip": "..\\..\\Livraria\\Data\\LivrariaContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T23:15:28.551Z"
             }
           ]
         }

@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace Livraria
 {
@@ -50,16 +52,17 @@ namespace Livraria
         }
 
 
+        [HttpPost]
+        public IActionResult InsertLivros(Livros livro)
+        {
+            contextDb.Livros.Add(livro);
+            contextDb.SaveChanges();
+            return Ok();
+        }
+
         public override string ToString()
         {
             return Livro;
         }
-
-        
-
-
-
-
-
     }
 }

@@ -1,0 +1,48 @@
+[
+  {
+    "ContainingType": "AtividadeApiCRUD.Controllers.AutomovelController",
+    "Method": "Get",
+    "RelativePath": "Automovel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Marca",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Veiculo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "key",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AtividadeApiCRUD.Controllers.AutomovelController",
+    "Method": "Put",
+    "RelativePath": "Automovel",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AtividadeApiCRUD.Controllers.AutomovelController",
+    "Method": "Delete",
+    "RelativePath": "Automovel",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -71,6 +72,13 @@ namespace Livraria
             return usu;
         }
 
-       
+        [HttpPost]
+        public IActionResult InsertUsuarios(Usuario usuario)
+        {
+            contextDb.Usuarios.Add(usuario);
+            contextDb.SaveChanges();
+            return Ok();
+        }
+
     }
 }

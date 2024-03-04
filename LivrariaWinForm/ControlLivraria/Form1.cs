@@ -131,8 +131,8 @@ namespace ControlLivraria
 
             bs.DataSource = usuarios.GetUsuarios().Where((usuario) => usuario.Nome.Contains(textoFiltro)).ToList();
 
-            dgvUsuarios.DataSource = bs; 
-            
+            dgvUsuarios.DataSource = bs;
+
         }
     }
 }
