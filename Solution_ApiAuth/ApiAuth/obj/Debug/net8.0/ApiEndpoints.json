@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "ApiAuth.Controllers.LoginController",
+    "Method": "Authenticate",
+    "RelativePath": "V1/auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "ApiAuth.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
